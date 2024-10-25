@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f0ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Encabezado */
+        header {
+            background-color: #d9c2f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #333;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        /* Secciones */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #7a5fa0;
+        }
+
+        /* Proyectos */
+        .project {
+            background-color: #e6d6f4;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        /* Formulario de contacto */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #d3c4e3;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #b390d4;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #9a75b0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenidos a Mi Página Personal</h1>
+    </header>
+
+    <!-- Sección de Proyectos -->
+    <section>
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve de tu primer proyecto.</p>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve de tu segundo proyecto.</p>
+        </div>
+        <!-- Agrega más proyectos según sea necesario -->
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section>
+        <h2>Contacto</h2>
+        <form class="contact-form" action="mailto:tu-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+</body>
+</html>
